@@ -67,6 +67,7 @@ def seed_admin():
     password = os.getenv('ADMIN_PASSWORD', 'Rojo2020').strip().lower()
     if not password:
         # Deliberately do not create a known/default administrator password.
+          password = os.getenv('ADMIN_PASSWORD', 'Rojo2020').strip().lower()
         return
     with SessionLocal() as db:
         existing = db.scalar(select(User).where(User.email == email))
