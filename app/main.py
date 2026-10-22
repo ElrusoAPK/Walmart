@@ -64,7 +64,7 @@ def get_db():
 
 def seed_admin():
     email = os.getenv('ADMIN_EMAIL', 'admin@linkx.local').strip().lower()
-    password = os.getenv('ADMIN_PASSWORD', 'Rojo2020')
+    password = os.getenv('ADMIN_PASSWORD')
     if not password:
         # Deliberately do not create a known/default administrator password.
         return
