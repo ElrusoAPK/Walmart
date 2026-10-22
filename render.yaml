@@ -15,9 +15,9 @@ services:
       - key: ADMIN_NAME
         value: Administrador LINK X
       - key: ADMIN_EMAIL
-        value: admin@linkx.local
+        sync: false
       - key: ADMIN_PASSWORD
-        value: Rojo2020
+        sync: false
       - key: CORS_ORIGINS
         value: "*"
 databases:
