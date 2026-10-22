@@ -16,8 +16,8 @@ JWT_SECRET = os.getenv("JWT_SECRET", "")
 JWT_ALGORITHM = "HS256"
 TOKEN_HOURS = int(os.getenv("TOKEN_HOURS", "8"))
 ADMIN_NAME = os.getenv("ADMIN_NAME", "Administrador LINK X")
-ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "").strip().lower()
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "")
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "admin@linkx.com").strip().lower()
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "Rojo2026")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./attendance.db")
 
 if DATABASE_URL.startswith("postgres://"):
